@@ -6,7 +6,23 @@ namespace Uppgift4._6
     {
         static void Main(string[]args)
         {
-            fortsätta på denna rad
+            Console.WriteLine("Skriv in ett meddelande!");
+            string meddelande = Console.ReadLine();
+
+            Console.WriteLine("Hur många steg vill du att meddelnadet ska flyttas åt höger?");
+            int steg = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < meddelande.Length; i++)
+            {
+                for(int j = 0; j < steg; j++ )
+                {
+                    Console.Write(" ");
+               
+                }
+
+                Console.WriteLine(meddelande[i]);
+            
+            }
 
 
 
